@@ -2,7 +2,7 @@ library alphanum_comparator;
 
 class AlphanumComparator {
   static bool _isDigit(String ch) {
-    return (ch.codeUnitAt(0) >= 48) && (ch.codeUnitAt(0) <= 57);
+    return double.parse(ch, (e) => null) != null;
   }
 
   /// Length of string is passed in for improved efficiency (only need to calculate it once)
